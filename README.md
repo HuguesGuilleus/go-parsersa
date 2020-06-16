@@ -1,6 +1,6 @@
 # go-parsersa
 
-[![GoDoc](https://godoc.org/HuguesGuilleus/go-parsersa?status.svg)](https://godoc.org/HuguesGuilleus/go-parsersa)
+[![GoDoc](https://godoc.org/github.com/HuguesGuilleus/go-parsersa?status.svg)](https://godoc.org/github.com/HuguesGuilleus/go-parsersa)
 
 A simple package to parse RSA key from PEM.
 
