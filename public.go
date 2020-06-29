@@ -28,6 +28,10 @@ func Public(raw []byte) (*rsa.PublicKey, error) {
 		return nil, errors.New("Need PEM block")
 	}
 
+	if k, err := x509.ParsePKCS1PublicKey(block.Bytes); err == nil {
+		return k, nil
+	}
+
 	k, err := x509.ParsePKIXPublicKey(block.Bytes)
 	if err != nil {
 		return nil, err
